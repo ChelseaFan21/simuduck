@@ -31,34 +31,34 @@ public class MallardDuck implements Duck {
         this.setFlyBehavior(flyBehavior);
     }
 
-    public void display() {
+    public final void display() {
         System.out.println("I'm a Mallard Duck");
     }
 
-    public void performQuack() {
+    public final void performQuack() {
         quackBehavior.quack();
     }
 
-    public void performFly() {
+    public final void performFly() {
         flyBehavior.fly();
     }
 
-    public student.QuackBehavior getQuackBehavior() {
+    public final QuackBehavior getQuackBehavior() {
         return quackBehavior;
     }
 
-    public void setQuackBehavior(QuackBehavior quackBehavior) {
+    public final void setQuackBehavior(QuackBehavior quackBehavior) {
         if(quackBehavior == null){
             throw new IllegalArgumentException("Please enter how the duck quacks.");
         }
         this.quackBehavior = quackBehavior;
     }
 
-    public student.FlyBehavior getFlyBehavior() {
+    public final FlyBehavior getFlyBehavior() {
         return flyBehavior;
     }
 
-    public void setFlyBehavior(FlyBehavior flyBehavior) {
+    public final void setFlyBehavior(FlyBehavior flyBehavior) {
         if(flyBehavior == null){
             throw new IllegalArgumentException("Enter how the duck flies.");
         }

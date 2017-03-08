@@ -4,7 +4,7 @@ import version5.*;
 
 public class FlyWithWings implements FlyBehavior {
 
-	public void fly() {
+	public final void fly() {
 		System.out.println("I'm flying!");
 	}
 

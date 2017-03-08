@@ -2,7 +2,7 @@ package student;
 
 public class Quack implements QuackBehavior {
 
-    public void quack() {
+    public final void quack() {
         System.out.println("Quack");
     }
 

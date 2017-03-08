@@ -2,7 +2,7 @@ package student;
 
 public class FlyNoWay implements FlyBehavior {
 
-    public void fly() {
+    public final void fly() {
         System.out.println("I can't fly");
     }
 
